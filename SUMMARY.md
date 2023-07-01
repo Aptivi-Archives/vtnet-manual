@@ -5,8 +5,12 @@
 ## Usage
 
 * [🖥 How to use](usage/how-to-use.md)
-* [🖥 How to use (pre-1.0.0)](usage/how-to-use-pre-1.0.0.md)
 * [⚒ How it works](usage/how-it-works.md)
+
+## Usage (legacy)
+
+* [🖥 How to use (pre-1.0.0)](usage-legacy/how-to-use-pre-1.0.0.md)
+* [⚒ How it works (pre-1.0.0)](usage-legacy/how-it-works-pre-1.0.0.md)
 
 ***
 

@@ -4,22 +4,24 @@ description: How do you use it?
 
 # 🖥 How to use
 
-Using this library is very simple! Just use the `VT.NET` namespace in any piece of code you want to use the library, as in: `using VT.NET;`
+VT.NET provides several filtering and manipulation tools which allow you to perform these operations on strings that contain escape sequences under the `VT.NET.Tools` namespace. Currently, these tools are provided:
 
-This library is categorized to four different classes to select your operation mode:
+| Function                         | Description                                                                            |
+| -------------------------------- | -------------------------------------------------------------------------------------- |
+| FilterVTSequences()              | Filters all of the VT sequences                                                        |
+| MatchVTSequences()               | Matches all of the VT sequences                                                        |
+| IsMatchVTSequences()             | Does the string contain all of the VT sequences or a VT sequence of any type?          |
+| IsMatchVTSequencesSpecific()     | Does the string contain all of the VT sequences or a VT sequence of any specific type? |
+| SplitVTSequences()               | Splits all of the VT sequences                                                         |
+| DetermineTypeFromText()          | Determines the VT sequence type from the given text                                    |
+| GetSequenceFilterRegexFromType() | Gets the sequence filter regular expression from the provided VT sequence type         |
 
-* `Filters`: filters the VT sequences from the text
-* `Matches`: matches the VT sequences from the text
-* `Queries`: queries the VT sequences from the text
-* `Splits`: splits the VT sequences from the text
+Place the `using VT.NET.Tools;` directive at the top of the file that you want to call these functions in. You need to put the class name `VtSequenceTools` before the function name mentioned above so that it looks like this:
 
-Each of these classes may be referenced statically in your application. Once done, you should be able to call the functions inside them, each with the specific filter for each VT sequence type:
-
-* All VT sequences
-* CSI sequences
-* OSC sequences
-* ESC sequences
-* APC sequences
-* DCS sequences
-* PM sequences
-* C1 sequences
+<pre class="language-csharp"><code class="lang-csharp">char BellChar = Convert.ToChar(0x7);
+char EscapeChar = Convert.ToChar(0x1b);
+char StringTerminator = Convert.ToChar(0x9c);
+string vtSequence1 = $"{EscapeChar}[38;5;43m";
+<strong>string filtered = VtSequenceTools.FilterVTSequences($"Hello!{vtSequence1}");
+</strong><strong>Console.WriteLine(filtered);
+</strong></code></pre>

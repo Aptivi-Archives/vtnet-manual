@@ -5,6 +5,7 @@
 ## Usage
 
 * [🖥 How to use](usage/how-to-use.md)
+* [🖥 How to use (pre-1.0.0)](usage/how-to-use-pre-1.0.0.md)
 * [⚒ How it works](usage/how-it-works.md)
 
 ***

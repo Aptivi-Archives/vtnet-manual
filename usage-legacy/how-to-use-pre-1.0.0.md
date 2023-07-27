@@ -7,7 +7,7 @@ description: How do you use it?
 {% hint style="warning" %}
 We highly recommend using version 1.0.0 of VT.NET to get the most out of its features. We support using version 0.2.0.1 or lower until **February 22nd, 2024**.
 
-[Click here](../usage/how-to-use.md) to learn more.
+[Click here](../usage/how-to-use/) to learn more.
 {% endhint %}
 
 Using this library is very simple! Just use the `VT.NET` namespace in any piece of code you want to use the library, as in: `using VT.NET;`

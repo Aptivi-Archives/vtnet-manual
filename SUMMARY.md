@@ -4,7 +4,8 @@
 
 ## Usage
 
-* [🖥 How to use](usage/how-to-use.md)
+* [🖥 How to use](usage/how-to-use/README.md)
+  * [🧰 VT Sequence Builder](usage/how-to-use/vt-sequence-builder.md)
 * [⚒ How it works](usage/how-it-works.md)
 
 ## Usage (legacy)

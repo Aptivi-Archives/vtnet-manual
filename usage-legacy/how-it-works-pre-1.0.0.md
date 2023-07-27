@@ -7,7 +7,7 @@ description: How does it work?
 {% hint style="warning" %}
 We highly recommend using version 1.0.0 of VT.NET to get the most out of its features. We support using version 0.2.0.1 or lower until **February 22nd, 2024**.
 
-[Click here](../usage/how-to-use.md) to learn more.
+[Click here](../usage/how-to-use/) to learn more.
 {% endhint %}
 
 VT.NET contains several techniques on how to work with the VT sequences contained in the text.

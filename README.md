@@ -4,6 +4,10 @@ description: Welcome to VT.NET!
 
 # 👋 Welcome!
 
+{% hint style="info" %}
+VT.NET is being replaced by Terminaux. We recommend that your new projects use Terminaux. The migration guide will be available under the Terminaux manual as soon as it's released.
+{% endhint %}
+
 Welcome to VT.NET! It's a library that filters text from the VT sequences and manages them.
 
 To use this library, go to any page in the left side of the screen.
